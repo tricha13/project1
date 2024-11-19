@@ -32,7 +32,7 @@ int main () {
 
   //containers
   if (containers > 0) 
-    cout << "Containers needed = " << leftoverContainers << endl;
+    cout << "Containers needed = " << containers << endl;
 
   //cookie 
   if (leftoverCookies > 0)
