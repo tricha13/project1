@@ -12,7 +12,7 @@ int main () {
 
   //first off, get the user to input the total amount of cookies in the boxes.
   cout << "Enter the total number of cookies";
-  cin << cookiesTotal;
+  cin >> cookiesTotal;
 
   // calculations for the output - 75 boxes and 24 cookies
   boxes = cookiesTotal / 24;
@@ -23,12 +23,16 @@ int main () {
   containers = boxes / 75;
 
   //boxes
-  if (containers > 0)
-  cout << "leftover boxes = " << leftoverBoxes << endl;
+  if (boxes > 0)
+  cout << "Boxes needed = " << boxes << endl;
+
+  //boxes left
+  if (leftoverBoxes > 0)
+    cout << "leftover boxes = " << leftoverBoxes << endl;
 
   //containers
   if (containers > 0) 
-    cout << "Leftover containers = " << leftoverContainers << endl;
+    cout << "Containers needed = " << leftoverContainers << endl;
 
   //cookie 
   if (leftoverCookies > 0)
